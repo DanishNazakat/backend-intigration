@@ -1,0 +1,81 @@
+/* full page center */
+div {
+  min-height: 600px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+}
+
+/* card style feel */
+div::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  z-index: -1;
+}
+
+/* heading */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* inputs */
+input {
+  width: 320px;
+  padding: 13px 16px;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+/* focus effect */
+input:focus {
+  background-color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+}
+
+/* placeholder */
+input::placeholder {
+  color: #9ca3af;
+}
+
+/* button */
+button {
+  width: 320px;
+  padding: 13px;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* hover */
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.4);
+}
+
+/* click */
+button:active {
+  transform: scale(0.97);
+}
