@@ -8,6 +8,7 @@ import Login from './components/login/login'
 import About from './components/about'
 import Navbar from './components/navbar/navbar'
 import Home from './components/home/Home'
+import Profile from './components/login/profile'
 function App() {
 
 
@@ -18,6 +19,7 @@ function App() {
        <Route path='/' element={<Signup />} />
        <Route path='/login' element={<Login />} />
        <Route path='/home' element={<Home />} />
+       <Route path='/profile' element={<Profile />} />
        <Route path='/about' element={<About />} /> 
       </Routes>
 

@@ -1,0 +1,45 @@
+/* Center container with light background */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Card style */
+.profile-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Title style */
+.profile-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Each info row */
+.profile-item {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.profile-item strong {
+    color: #333;
+}
+
+/* Message when user not logged in */
+.login-message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #555;
+}

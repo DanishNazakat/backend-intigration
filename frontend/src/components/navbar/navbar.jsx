@@ -8,6 +8,7 @@ export default function Navbar() {
         <NavLink to={'/home'} >home</NavLink><br></br>
         <NavLink to={'/login'} >login</NavLink><br></br> 
         <NavLink to={'/about'} >about</NavLink><br></br> 
+        <NavLink to={'/profile'} >profile</NavLink><br></br> 
         
     </nav>
   )
