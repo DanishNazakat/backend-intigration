@@ -1,64 +1,32 @@
-.home {
-  min-height: calc(100vh - 64px);
+.home-cards {
+  margin-top: 40px;
   display: flex;
-  align-items: center;
+  gap: 20px;
   justify-content: center;
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  flex-wrap: wrap;
 }
 
-.home-content {
-  max-width: 600px;
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 240px;
+  border-radius: 16px;
   text-align: center;
-  padding: 40px;
-  background: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
 }
 
-.home-content h1 {
-  font-size: 38px;
-  font-weight: 800;
-  color: #0f172a;
-  margin-bottom: 16px;
+.card h3 {
+  margin-bottom: 10px;
+  color: #00d084;
 }
 
-.home-content p {
-  font-size: 16px;
-  color: #475569;
-  margin-bottom: 30px;
-  line-height: 1.6;
+.card p {
+  font-size: 14px;
+  color: #e0e0e0;
 }
 
-.home-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-.home-buttons button {
-  padding: 14px 26px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 14px;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #ffffff;
-  transition: all 0.3s ease;
-}
-
-.home-buttons button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.4);
-}
-
-.home-buttons .outline {
-  background: transparent;
-  color: #2563eb;
-  border: 2px solid #2563eb;
-}
-
-.home-buttons .outline:hover {
-  background: #2563eb;
-  color: #ffffff;
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.18);
 }
